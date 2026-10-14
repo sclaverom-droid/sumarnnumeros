@@ -1,14 +1,16 @@
-# Pedir al usuario un número n
-n = int(input("Introduce un número: "))
+def sumar_n_primeros_numeros(n):
+    # Inicialización de las variables
+    contador = 1
+    suma = 0
+    
+    # Bucle MIENTRAS (while)
+    while contador <= n:
+        suma = suma + contador
+        contador = contador + 1
+        
+    # DEVOLVER: suma
+    return suma
 
-# Inicializar variables
-contador = 1
-suma = 0
-
-# Mientras contador sea menor o igual que n
-while contador <= n:
-    suma += contador
-    contador += 1
-
-# Mostrar el resultado
-print("La suma de los", n, "primeros números es:", suma)
+# Ejemplo de uso:
+# resultado = sumar_n_primeros_numeros(5)
+# print(resultado)  # Devolverá 15 (1+2+3+4+5)

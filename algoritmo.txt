@@ -1,0 +1,10 @@
+Sumar n primeros números
+ENTRADAS: n 
+SALIDA: suma
+contador = 1 
+suma = 0
+MIENTRAS contador ≤ n:  
+suma = suma + contador  
+contador = contador + 1
+FIN MIENTRAS
+DEVOLVER: suma
